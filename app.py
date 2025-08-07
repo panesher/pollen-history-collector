@@ -153,7 +153,6 @@ if __name__ == "__main__":
     collector = Collector(
         areas=list(Area),
         types=list(AllergyType),
-        base_path="keker",
     )
     asyncio.new_event_loop().run_until_complete(
         collector.run(),
