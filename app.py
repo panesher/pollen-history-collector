@@ -144,7 +144,7 @@ class Collector:
                 except Exception as e:
                     _LOGGER.warning(f"Got error while running for type='{type}' and area='{area}': {e}")
 
-                await asyncio.sleep(5)
+                await asyncio.sleep(1)
 
         return time.time() - cur_time
 
